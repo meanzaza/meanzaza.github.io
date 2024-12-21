@@ -1,0 +1,46 @@
+้้้้้้้้้้้h1{
+    border: 2px solid red;
+    border-radius: 10px;
+    height:100px;
+    padding: 20px;
+    background-color: black;
+    text-align: center;
+    color: white;
+    margin: 0px 0px 30px 0px;
+}
+.group1{
+    border: 2px solid red;
+    background-color: aquamarine;
+    padding-left: 10px;
+    width: 50vw;
+}
+
+.group2{
+    border: 2px solid red;
+    background-color: cadetblue;
+    width: 500ps
+}
+
+#text1{
+    width:50px;
+    background-color: blue;
+}
+
+p:hover {
+    color:red;
+}
+
+img{
+    width:200px;
+}
+
+.container{
+    display:flex;
+    border: 2px solid red;
+    flex-direction: row;
+}
+
+
+.item{
+    border: 2px solid red;
+}
