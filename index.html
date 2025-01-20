@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Recommender System</title>
+   <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+</head>
+
+<body style="background-color: rgb(255, 255, 255);">
+
+    <nav class="navbar" style="background-color: rgb(230, 70, 70);">
+        <p class="navbar-brand" style="color: white;">Book Recommendations</p>
+        <ul class="nav navbar-nav">
+            <li><a href="/">Home</a></li>
+            <li><a href="/recommend">Recommend</a></li>
+        </ul>
+    </nav>
+
+    <div class = "container">
+        <div class="row">
+            <div class = "col-md-12">
+                <h1 style="font: size 40px;"><b>ALL BOOKS IN OUR DATASET</b></h1><br>
+            </div>
+
+            {%for i in range(book_name|length)%}
+                
+                    <div class="card">
+                        <div class="card-body" style="color: black; font-size: 20px;">
+                            <p><b>{{i+1}}. {{book_name[i]}}</b></p>
+                            <p>{{author[i]}}</p>
+                            <p>{{content[i]}}</p>
+                            <p>price: {{price[i]}}$</p><hr style="border-color: #3a3a3a">
+                        </div>
+                    </div>
+                
+            {% endfor %}
+
+
+
+        </div>
+    </div>
+    
+</body>
+</html>
